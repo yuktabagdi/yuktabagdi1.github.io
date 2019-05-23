@@ -1,0 +1,765 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Replicate.</title>
+
+	<style type="text/css">
+		body{
+			margin:0;
+			position:absolute;
+			font-family: calibri, Times, sans-serif;
+		}
+		header{
+		
+			height:88px;
+
+		}
+		#topbar{ 
+			width:1500px;
+			margin:0 auto;
+
+		}
+		ul{
+			list-style: none;
+		}
+
+
+		#logo{
+			width:500px;
+			padding:30px 0 0 60px;
+		
+		}
+		#title{
+			
+			width:500px;
+			color:red;
+			margin-left:60px;
+			font-size: 27px
+		}
+
+		#boy{
+		
+			position:relative;
+			padding-bottom: 0;
+			right:-680px;
+			top:-87px;
+
+		}
+
+		.break{
+			clear:both;
+		}
+
+		.blank{
+			width:1000px;
+			height:6px;
+		}
+		.content{
+
+			background-color: #FD3B26;
+			width:1100px;
+			height:300px;
+			padding-left: 60px;
+			padding-top:0;
+			color:white;
+			font-size:17px;
+			background:cover;
+			
+		}
+
+
+		#signin{
+			font-size: 40px;
+
+		}
+
+		.form{
+			background-color:#D5301F;
+			
+			width:345px;
+			height:185px;
+			padding:13px;
+		}
+		
+		.inputform{
+			padding-bottom:10px;
+		}
+		input[type=text],select,textarea{
+			width:90%;
+			height:15px;
+			padding:6px;
+			border:1px solid #ccc;
+			resize: vertical;
+		}
+
+		.rcc{
+			font-size:10px;
+			font-family: calibri, Times, sans-serif;
+			float:right;
+			padding-right:170px;
+		}
+
+		.dash{
+			position:relative; top:-10px;
+			right:-100px;
+		}
+		
+		.dash2{
+			position:relative; top:-10px;
+			color:orange;
+		}
+		.buttondiv{
+			padding:15px 5px 10px 5px;
+
+		}
+		 .button{
+			background-color:#FFA822;
+			border:none;
+			color:white;
+			padding:15px 90px;
+			display:inline-block;
+		}
+
+		.button:hover{
+			background-color:#FF7121;
+		}
+
+		.button1{
+			background-color:#22BCFF;
+			padding:10px 20px; 
+			position: relative;
+			top:-12px;
+			color:white;
+			border:none;
+		}
+
+		.button1:hover{
+			background-color: #1EA4DF;
+
+		}
+		
+		.button2{
+			background-color:#FFA822;
+			padding:10px 45px; 
+			position: relative;
+			top:-12px;
+			color:white;
+			border:none;
+		}
+		
+
+		.button2:hover{
+			background-color: #FF7125;
+
+		}
+		#firsttime{
+			font-size:20px;
+			position: relative;
+			right:-100px;
+
+			
+		}
+
+		.teacherparent{
+
+				background-color:#D5301F;
+				width:200px;
+				height:100px;
+				padding:25px;
+				color:white; 
+				position:relative; 
+				right:-395px; 
+				top:-200px;
+				padding:25px 25px;
+				text-align: center;
+
+
+				
+
+		}
+
+		#contentfooter{
+			width:1170px;
+			height:10px;
+			background-color:#D5301F;
+			position:relative;
+			top:-345px;
+			left:-70px;
+
+			}
+
+		#booksdiv{
+
+			background-color: #39A687;
+			width:1040px;
+			height:435px;
+			position:relative;
+			top: -320px;
+			left:-60px;
+			padding: 5px 60px;
+			font-size: 30px;
+			font-family: calibri , Times, sans-serif;
+
+			
+		}
+
+		#bookpile{
+			
+			position: relative;
+			right:-600px;
+			top:-305px;
+		}
+
+		.video1{
+			position:relative;
+			float:top;
+		
+		}
+
+		.video2{
+			position:relative;
+			
+			
+		
+		}
+
+
+		.text{
+			
+			font-size: 30px;
+			font-family: calibri , Times, sans-serif;
+			color:red;
+			position:relative;
+			top:-200px;
+			
+			
+			text-align:left;
+			padding-left:250px;
+			width:100%;}
+
+		#methodsdiv{
+
+				position:relative;
+				top:-200px;
+				
+				left:-60px;
+				width:300px;
+		}
+
+		.method{
+			text-align: center;
+			float:left;
+			position:relative;
+			padding-left: 25px;
+
+		}
+
+		.method2{
+			text-align: center;
+			float:left;
+			position:relative;
+			right:-230px;
+			top:-364px;
+
+		}
+
+		.method3{
+			text-align: center;
+			float:left;
+			position:relative;
+			right:-565px;
+			top:-692px;
+
+
+		}
+
+		.method4{
+			text-align: center;
+			float:right;
+			position:relative;
+			right:-807px;
+			top:-1057px;
+
+		}
+
+
+		#getstarted
+		{
+			width:360px;
+			height:650px;
+			background-color:#F4F1EA ;
+			position:relative;
+			text-align:left;
+			 top:-1200px;
+			left:-60px;
+			color:red;
+			font-family:calibri, Times, sans-serif;
+			padding: 5px 400px;
+			font-size:35px;
+		}
+		#ytplaylist{
+			position:relative;
+			background-color:white;
+			top:-1750px;
+			left:-30px;
+			width:1100px;
+			height:440px;
+			;
+			padding-top: 1px;
+
+		}
+
+		#scrollbar{
+			width:35%;
+			height:340px;
+			overflow:auto;
+			background-color:white;
+			position:relative;
+			
+			top:-350px;
+			left:-29px;
+			text-align:left;
+			float:right;
+			padding-right: 70px;
+			border:1px solid #ccc;
+			
+
+			
+		}
+
+		.p1{
+			float:right;
+			text-align:center;
+			position:relative;
+			
+		}
+
+		#exclusive{
+			width:1700px;
+			height:300px;
+			margin-left:0;
+			position: relative;
+			top:-1900px;
+			text-align: center;
+			padding-left:50px;
+			padding-right:150px;
+			left:-114px;
+		}
+
+		.point{
+			float:left;
+			
+					}
+
+		.point0{
+			width:233px;
+			height:150px;
+			border-left:1px solid red;
+			padding:20px ;
+			text-align:center;
+			}
+
+		.letsgetreading{
+			width:1510px;
+			height:270px;
+			background-color:#F4F1EA  ;
+			position:relative;
+			top:-1850px;
+			left:-400px;
+			text-align:center;
+			padding-top:1px;
+		}
+
+		.signup{
+			width:100%;
+		}
+		.Teachers{
+			width:950px;
+			height:150px;
+			text-align:right;
+			
+			padding-right:265px;
+			position: relative;
+			left:-240px;
+		}
+
+		.Parents{
+			width:1420px;
+			height:150px;
+			float:left;
+			text-align:right;
+			
+			
+			position:relative;
+			top:-150px;
+			left:-150px;
+			padding-right:265px;
+		}
+
+		.buttondiv2{
+			position:relative;
+			top:20px;
+			right:-170px;
+		}
+
+		.blockli{
+
+			color:black;
+			float:left;
+
+		}
+
+		.blocks{
+			width:250px;
+			height:260px;
+			border-left: 10px solid white;
+			
+			color:#3a3a3a;
+			padding:20px;
+			text-align:left;
+			font-size:25px;
+
+		}
+
+		.blocklist{
+			position:relative;
+			left:290px;
+			top:-29px;
+		}
+
+		.copyrights{
+			color:#3a3a3a;
+			font-size:25px;
+			position:relative;
+			top:-1900px;
+		}
+	</style>
+</head>
+<body>
+	<div id="container">
+
+		<header>
+			<div id="topbar">
+				<div id="logo">
+				<img src="logo.PNG" width="170px"/>
+				</div>
+
+				<div id="title">
+					<strong>Scholastic Book Clubs</strong>
+
+					<div id="boy">
+					<img src="boy.PNG" width="270px"/>
+					</div>
+
+				</div>
+			</div>
+
+				
+		</header>
+
+		<div class="break">
+		</div>
+
+		<div class="content">
+			<div class="blank">
+			</div>
+			Welcome Back!
+			<br/>
+			<span id="signin"> <strong>SIGN IN </strong></span>
+			<div style="position:relative; right:-300px; top:-4px;">
+
+				<p style="text-align:left">
+
+					<span class="dash">	_____________________</span>
+
+					 <span id="firsttime">FIRST TIME HERE</span>
+					
+
+					<span class="dash"> _____________________</span>
+
+
+				</p> 
+
+			</div>
+			<div class="form" style="position:relative; top:-50px;">
+
+				<div class="inputform">
+					<input type="text" placeholder="Scholastic Account Email">
+				</div>
+				<div class="break">
+				</div>
+
+				<div class="inputform">
+					<input type="text" placeholder="Scholastic Account Password">
+				</div>
+
+				<div class="inputform">
+
+					<label class="remember">
+
+					<input type="checkbox" checked="checked">
+					<span class="checkmark"></span>
+					 Remember me 
+						<span class="rcc">(Not recommended for public computers)
+						</span> 
+					
+
+				</div>
+
+				<div class="buttondiv">
+
+				
+					<button class="button"> SIGN IN </button>
+
+				
+				</div>
+
+			</div>
+
+			<div class="teacherparent" >
+				
+				<p ><font size="6px" style="position: relative; right:-10px"> TEACHERS</font></p>
+				<div class="buttondiv">
+
+				
+					<button class="button button1"> CREATE AN ACCOUNT </button>
+
+				
+				</div>
+			
+			</div>
+
+			<div class="teacherparent" style="position: relative; right:-650px; top:-350px ;border-left: 10px solid #FD3B26">
+				<p> <font size="6px">PARENTS</font></p>
+				<div class="buttondiv">
+
+				
+					<button class="button button2"> GET STARTED </button>
+
+			</div>
+
+			
+			
+		</div>
+
+
+			<div id="contentfooter">
+			</div>
+
+			
+		
+
+		<div id="booksdiv">
+			<p> When Children Love to Read, the Future Is an Open Book.</p> 
+
+			<div class="video1">
+				<iframe width="520px" height="295px"
+				src="https://www.youtube.com/embed/8GvdkQyJ9a0?autoplay=1" allowfullscreen>
+				</iframe>
+
+			<div id="bookpile">
+				<img src="books.PNG"/> </div>
+
+
+		</div>
+
+		<div class="break">
+		</div>
+			<div class="text">
+				<p>How to Grow The Love For Reading</p>
+			</div>
+
+			<div id=methodsdiv>
+				<div class="method" style="float:left">
+					<img src="method1.jpeg"/>
+
+					<p > <span class="dash2">_______</span>   <font color="red">1</font>   <span class="dash2">_______</span>
+					</p>
+					<img src="capture.PNG"/>
+					
+				</div>
+
+				<div class="method method2">
+					<img src="method2.jpeg" />
+
+					<p > <span class="dash2">_______</span>   <font color="red">2</font>   <span class="dash2">_______</span>
+					</p>
+					<img src="capture2.PNG"/>
+					
+				</div>
+
+				<div class="method method3" >
+					<img src="method3.jpeg"/>
+
+					<p ><span class="dash2">_______</span>   <font color="red">3</font>   <span class="dash2">_______</span>
+					</p>
+					<img src="capture3.PNG"/>
+					
+				</div>
+
+				<div class="method method4">
+					<img src="method4.jpeg" />
+
+					<p> <span class="dash2">_______</span>   <font color="red">4</font>   <span class="dash2">_______</span>
+					</p>
+					<img src="capture4.PNG"/>
+					
+				</div>
+
+
+			</div>
+
+			<div class="break">
+			</div>
+			
+			<div id="getstarted">
+				<p>How To Get Started</p>
+			</div>
+
+			<div class="break">
+			</div>
+			<div id="ytplaylist">
+
+				<ul>
+					<li><div class="video2" >
+					<img src="vid1.PNG" width="55%"/>
+				</div></li>
+
+				<li><div id="scrollbar">
+
+						<font size="3px" color="black">
+							<ul> <li> <img src="vid11.PNG" width="140px"/> <p style="float:right; text-align:center">Teachers: The Reward <br/> of Book Clubs</p></li>
+							<li> <img src="vid12.PNG"width="140px"width="140px"/><p class="p1"> Teachers: How to <br/>Get Started</p> </li>
+							<li><img src="vid13.PNG"width="140px"><p class="p1">Parents: How to <br/>Get Started</p></li>
+							<li> <img src="vid14.PNG"width="140px"> <p class="p1">Parents: How to<br/> Easily Order Online</p></li>
+							<li> <img src="vid15.PNG"width="140px"> <p class="p1">How to use<br/> Bonus Points </p></li>
+						</ul>
+					</font>
+				</div></li>
+			</ul>
+			</div>
+			<div class="break">
+			</div>
+
+			<div id="exclusive">
+
+				<font color="red" size="10px" style="position:relative; left:-300px">	Exclusively For Teachers</font>
+
+				<div id="pointsdiv">
+
+					<font color="black">
+
+					<ul>
+						<li class="point"> <div class="point0"> Shop<br/> Exclusive <br/> Teacher Values > 
+						</div></li>
+
+						<li class="point"> <div class="point0"> Introduce a New <br/> Teacher-Get 250 <br/> Bonus Points > 
+						</div></li>
+
+						<li class="point"> <div class="point0">
+							Sign In to<br/> Redeem Your <br/> Bonus Points >
+						</div></li>
+
+						<li class="point"> <div class="point0" style="border-right:1px solid red">
+
+							New Apple <br/> Recognition and <br/> Rewards Program >
+						</div></li>
+					</ul>
+				</font>
+
+
+				</div>
+
+				<div class="break">
+				</div>
+
+			
+			</div>
+
+			<div class="letsgetreading">
+				<p class="paraheading" style="font-family: BrandonText-Regular, Arial, sans-serif; font-size:36px;color:#d83230;">
+						Let's Get Reading
+				</p>
+				<div class="signup">
+				<ul>
+					<li>
+						<div class="Teachers">					
+						<div class="lets-get-reading-subtitle" style="color:#3FB0EB; position: relative; left:-40px">TEACHERS</div>
+						<div class="buttondiv2"><button class="button1" style="padding:10px 190px"> CREATE AN ACCOUNT></button></div>
+						</div>
+					
+						</button>
+					</li>
+				
+					<li>
+						<div class="Parents">
+						<div class="lets-get-reading-subtitle" style="color:#f88000;position: relative; left:-53px">PARENTS</div>
+						<div class="buttondiv2"><button class="button2" style="padding:10px 190px">FOR GETTING STARTED></button> </div>  
+					
+					</div>
+					<li>
+				</div>
+			</div>
+
+			<div class="break"></div>
+			
+			<div class="letsgetreading">
+				<ul class="blocklist">
+					<li class="blockli"><div class="blocks"> 
+						<ul>
+							<li> <b>FOR TEACHERS</b></li>
+							<li></li>
+							<li> Create an Account</li>
+							<li> Request a Catalog </li>
+							<li> FAQs </li>
+						</ul>
+						</div>
+					</li>
+
+					<li class="blockli"><div class="blocks">
+						<ul> 
+							<li><b>FOR PARENTS</b></li>
+							<li></li>
+							<li>Connect to You Teacher</li>
+							<li>FAQs</li>
+							<li> </li>
+							<li><b>CONTESTS & PROGRAMS</b></li>
+							<li> </li>
+							<li>All Contests</li>
+						</ul>
+
+						</div>
+					</li>
+
+					<li class="blockli"><div class="blocks">
+						<ul>
+							<li> <b>CONTACT US</b></li>
+							<li></li>
+							<li> bookclubs@schol-<br/>-astic.com</li>
+							<li> 1-800-724-6527</li>
+						</div></li>
+
+					<li class="blockli"><div class="blocks" style="border-right:10px solid white">
+							<ul>
+								<li> <b> FOLLOW US </b></li>
+								<li></li>
+								<li> <img src="judy.PNG" width="190px"/> </li>
+							</ul>
+						</div></li>
+
+
+
+			</div>
+			<div class="copyrights">
+				Scholastics.com| About Scholastic| Site Map| Careers | Investor Relations | International <br/>
+				<b> PRIVACY POLICY </b> * TERMS OF USE * TM &copy; 2019 Yukta Bagdi. Spring Fest Assignment 2
+			</div>
+
+
+		</div>
+
+
+	</div>
+
+</body>
+</html>
